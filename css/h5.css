@@ -1,0 +1,115 @@
+/*框架自带*/
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+/*框架自带结束*/
+/*音乐*/
+#music{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9;
+    opacity: 0.5;
+}
+#music .music_bg{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@keyframes music{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#music .music_pic{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    animation: music 2s linear infinite;
+}
+/*音乐结束*/
+#btn { position: relative; right: 0; top: 50vh;}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.p1_t { position: relative; left: 20vw; top:10vh; float: left;}
+.p1_t img { width: 10vw;}
+.p2_t img { width: 10vw;}
+.p3_t img { width: 10vw;}
+.p4_t img { width: 10vw;}
+.p5_t img { width: 10vw;}
+.p1_img { position: relative; left: -40vw;top:50vh;}
+.p1_img img { width: 40vw;}
+.p1_c11 { writing-mode: vertical-rl; font-size: 8vw; width: 10vw; position: relative; top:10vh; left:40vw; float: left; line-height: 8vw;}
+.p1_c1 { writing-mode: vertical-rl; font-size: 5vw; width: 10vw; position: relative; top:10vh; left:40vw; float: left; line-height: 6vw; }
+.p1_c22 { writing-mode: vertical-rl; font-size: 8vw; width: 10vw; position: relative; top:10vh; left:40vw; float: left; line-height: 8vw;}
+.p1_c2 { writing-mode: vertical-rl; font-size: 5vw; width: 10vw; position: relative; top:10vh; left:40vw; float: left; line-height: 6vw;}
+.p2_t { position: relative; left: 80vw; top:15vh; float: left;}
+.p2_img { position: relative; left: 10vw;top:15vh;}
+.p2_img img { width: 40vw;}
+.p2_c1 { text-align: right; width: 90vw; position: relative; top: 30vh; margin-right: 10vw; font-size: 8vw;}
+.p2_c2,.p2_c3,.p2_c4 { text-align: right; width: 90vw; position: relative; top: 30vh; margin-right: 10vw; font-size: 6vw;}
+.p3_t { position: relative; left: 80vw;top:-13vh; float: left;}
+.p3_img { position: relative; left: 10vw;top:15vh;}
+.p3_img img { width: 60vw;}
+.p3_c7 { text-align: right; width: 90vw; position: relative; top: 5vh; margin-right: 10vw; font-size: 6vw;}
+.p3_c1,.p3_c2,.p3_c3,.p3_c4,.p3_c5,.p3_c6 { text-align: left; width: 90vw; position: relative; top: 5vh;margin-left: 10vw; font-size: 6vw;}
+.p4_c1 { text-align: left; width: 90vw; position: relative; top: 31vh; margin-left: 10vw; font-size: 6vw;}
+.p4_t { position: relative; left: 80vw; top:10vh; float: left;}
+.p4_img { position: relative; left: 10vw;top:9vh;}
+.p4_img img { width: 40vw;}
+.p5_t { position: relative; left: 10vw; top:30vh;}
+.p5_img { position: relative; left: 40vw;top:12vh;}
+.p5_img img { width: 50vw;}
+.p5_c1 { text-align: right; width: 90vw; position: relative; top: 10vh; margin-right: 10vw; font-size: 6vw;}
